@@ -2,7 +2,18 @@
 
 def hourglassSum(arr)
   # Write your code here
-
+  prevVal = 0
+  while j < arr.length
+    newVal = arr[i][j] + arr[i+1][j] +  + arr[i+2][j]
+                        + arr[i+1][j+1]
+              arr[i][j+2] + arr[i+1][j+2] +  + arr[i+2][j+2]
+    prevVal = newVal if newVal > prevVal
+    if i === arr.length-1
+      i = 0
+      j += 1
+    end
+  end
+  prevVal
 end
 
 # T.C.0: 19
