@@ -2,12 +2,16 @@
 
 def hourglassSum(arr)
   # Write your code here
-  prevVal = 0
+  prevVal = nil
   i = 0
   j = 0
   while j < 4
     newVal = arr[i][j] + arr[i][j+1] + arr[i][j+2] + arr[i+1][j+1] + arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2]
-    prevVal = newVal if newVal > prevVal
+    if prevVal.nil?
+      prevVal = newVal
+    elsif newVal > prevVal
+      prevVal = newVal
+    end
     puts "i:#{i}, j#{j}, prev:#{prevVal}, new:#{newVal}"
     i += 1
     if i === 4
