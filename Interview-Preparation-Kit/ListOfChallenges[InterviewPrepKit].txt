@@ -5,7 +5,7 @@
 
 ARRAYS
  1.[X] - 2D Array - DS
- 2.[ ] - Array Manipulation
+ 2.[/] - Array Manipulation
  3.[X] - Left Rotation
  4.[ ] - Min Swap 2
  5.[ ] - New Year Chaos
