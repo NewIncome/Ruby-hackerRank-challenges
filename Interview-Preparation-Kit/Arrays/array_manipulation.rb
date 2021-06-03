@@ -5,11 +5,20 @@
 
 def arrayManipulation(n, queries)
   # Write your code here
-
+  # fill array with value from index to index
+  # check for maxVal while filling
+  arr = Array.new(n, 0)
+  maxVal = nil;
+  for query in queries
+    # p "query:#{query}, arr:#{arr}"
+    for i in (query[0]-1)..(query[1]-1)
+      arr[i] = arr[i] + query[2]
+      maxVal = arr[i] if maxVal.nil?
+      maxVal = arr[i] > maxVal ? arr[i] : maxVal
+    end
+  end
+  maxVal
 end
-
-# T.C.0:
-p arrayManipulation()
 
 # T.C.0: 200
 p arrayManipulation(5, [ [ 1, 2, 100 ], [ 2, 5, 100 ], [ 3, 4, 100 ] ])
