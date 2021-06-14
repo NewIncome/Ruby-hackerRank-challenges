@@ -3,7 +3,7 @@
 ------------------------------------------------
 // [ ] == unsolved   ;   [X] == solved   ;   [/] == with TLE errors
 
-1. [ ] FizzBuzz
+1. [X] FizzBuzz
 2. [ ] Drawing Book
 3. [ ] Electronics Shop
 4. [ ] Picking Numbers
