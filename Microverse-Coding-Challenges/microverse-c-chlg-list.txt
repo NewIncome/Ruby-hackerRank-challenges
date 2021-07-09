@@ -5,7 +5,7 @@
 
 1. [X] FizzBuzz
 2. [/] Drawing Book
-3. [ ] Electronics Shop
+3. [X] Electronics Shop
 4. [ ] Picking Numbers
 5. [ ] The Hurdle Race
 6. [ ] Angry Professor
