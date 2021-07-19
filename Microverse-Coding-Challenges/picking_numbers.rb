@@ -7,27 +7,17 @@ def pickingNumbers(a)
   temp_ar = [asc_ar[0]]
 
   for i in 0..(a.length-2)
-    puts "#{asc_ar[i]} - #{asc_ar[i+1]} : #{asc_ar[i] - asc_ar[i+1]}"
-    if (asc_ar[i] - asc_ar[i+1]).abs < 2
-      # puts "inside IF"
-      temp_ar.push(asc_ar[i+1])
-    else
-      # puts "inside ELSE"
-      lengths.push(temp_ar.length) if temp_ar.length > 1
-      puts "temp_ar:#{temp_ar}"
-      temp_ar = [asc_ar[i+1]]
+    for j in (i+1)..(a.length-1)
+      # puts "#{asc_ar[i]} - #{asc_ar[j]} : #{asc_ar[i] - asc_ar[j]} , j:#{j}"
+      temp_ar.push(asc_ar[j]) if (asc_ar[i] - asc_ar[j]).abs < 2
     end
+    lengths.push(temp_ar.length) if temp_ar.length > 1
+    # puts "temp_ar:#{temp_ar}, i:#{i}"
+    temp_ar = [asc_ar[j]]
   end
 
-  puts "asc_ar:#{asc_ar}, lengths:#{lengths}"
+  # puts "asc_ar:#{asc_ar}, lengths:#{lengths}"; puts
   lengths.max()
-
-  # a.each_with_index do |e, i|
-  #   for j in i..a.length
-  #     dif = e.abs - a[i].abs
-  #     abs_dif.push(dif) if 
-  #   end
-  # end
 end
 
 # T.C.example : 5
