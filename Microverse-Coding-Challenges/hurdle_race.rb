@@ -1,6 +1,8 @@
 def hurdleRace(k, height)
   # minimum potions needed to jump all hurdles? If none, return 0
-    # Write your code here
+  potions = 0
+  height.each{|h| potions = h - k if h > k && h-k > potions}
+  potions
 end
 
 # T.C.0 : 2
