@@ -7,7 +7,7 @@
 2. [/] Drawing Book
 3. [X] Electronics Shop
 4. [X] Picking Numbers
-5. [ ] The Hurdle Race
+5. [X] The Hurdle Race
 6. [ ] Angry Professor
 7. [ ] Find Digits
 8. [ ] Library Fine
