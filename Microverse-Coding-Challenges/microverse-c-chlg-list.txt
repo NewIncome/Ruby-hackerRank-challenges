@@ -9,7 +9,7 @@
 4. [X] Picking Numbers
 5. [X] The Hurdle Race
 6. [X] Angry Professor
-7. [ ] Find Digits
+7. [X] Find Digits
 8. [ ] Library Fine
 9. [ ] Repeated String
 10.[ ] Equalize the Array
